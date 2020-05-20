@@ -28,8 +28,9 @@ const app = express();
 
 const users = require('./routes/users');
 
-// Port Numberw
-const port = 3000;
+// Port Number
+//const port = 3000; //Local port
+const port = process.env.PORT || 8080; //variable contaning the port to listen
 
 // CORS Middleware, allows remote hosts to access this server resources.
 app.use(cors());
@@ -53,7 +54,11 @@ app.get('/', (req, res) => {
   res.send('Invalid Endpoint');
 });
 
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public/index.html'))
+})
+
 // Start Server
 app.listen(port, () => {
-  console.log('Server started on port '+port);
+  console.log('Server started on port '+ port);
 });
