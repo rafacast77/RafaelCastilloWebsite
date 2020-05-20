@@ -2064,7 +2064,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function registerUser(user) {
           var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_1__["Headers"]();
           headers.append('Content-Type', 'application/json');
-          return this.http.post('http://localhost:3000/users/register', user, {
+          return this.http.post('users/register', user, {
             headers: headers
           }).map(function (res) {
             return res.json();
@@ -2075,7 +2075,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function authenticateUser(user) {
           var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_1__["Headers"]();
           headers.append('Content-Type', 'application/json');
-          return this.http.post('http://localhost:3000/users/authenticate', user, {
+          return this.http.post('users/authenticate', user, {
             headers: headers
           }).map(function (res) {
             return res.json();
@@ -2088,7 +2088,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           this.loadToken();
           headers.append('Authorization', this.authToken);
           headers.append('Content-Type', 'application/json');
-          return this.http.get('http://localhost:3000/users/home', {
+          return this.http.get('users/home', {
             headers: headers
           }).map(function (res) {
             return res.json();
