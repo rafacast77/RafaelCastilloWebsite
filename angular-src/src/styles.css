@@ -1,0 +1,21 @@
+a.active{
+    background-color: rgba(8, 95, 167, 0.233);
+}
+
+
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: #3f4041af; 
+ }
+.card {
+    overflow: hidden;
+}
+#this{
+    background-image: url(../src/app/images/vegs2.jpg);
+}
+.lr{
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 10%
+}
+

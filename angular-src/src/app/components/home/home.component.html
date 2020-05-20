@@ -1,0 +1,15 @@
+  <div class="jumbotron text-center lr">
+    <h1 class="display-5">Nutrition app</h1>
+    <div>
+        <p  class="lead">Sign in to use the web app</p>
+        <a *ngIf="!authService.loggedIn()" class="btn btn-primary" [routerLink]="['/register']">Register</a>
+        <a *ngIf="!authService.loggedIn()" class="btn btn-info" [routerLink]="['/login']">Login</a>
+       
+      <ul *ngIf="authService.loggedIn()" class="list-group">
+        <p  class="lead">Welcome back {{user.name}}</p>
+        <li class="list-group-item"> Username: {{user.username}}</li>
+        <li class="list-group-item"> Email: {{user.email}}</li>
+      </ul>
+    </div>
+  </div>
+

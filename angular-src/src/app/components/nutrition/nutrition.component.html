@@ -1,0 +1,72 @@
+<div class="jumbotron" style="margin-top: 5%;">
+  <h1 class="text-center display-3">Get Your Meal Nutrition!</h1>
+  <div class="row" style="margin-top: 40px;">
+    <div class="col" style="max-width: 60%;">
+      <div class="card text-white bg-secondary mb-3" style="padding: 20px;">
+        <form (submit)="onRecipeSubmit()" id="recipeForm col-form-label-lg">
+          <div class="form-group">
+            <label class="  col-form-label col-form-label-lg " for="inputLarge">Recipe Tittle</label>
+            <input type="text" class="form-control form-control-md" [(ngModel)]="tittle" name="tittle"
+              placeholder="Lasagne" id="inputLarge">
+          </div>
+          <div class="form-group ">
+            <label class="col-form-label col-form-label-lg" for="inputLarge">Servings</label>
+            <input class="form-control form-control-md" type="text" placeholder="3" id="inputLarge" [(ngModel)]="yield"
+              name="yield">
+          </div>
+
+          <div class="form-group ">
+            <label class="col-form-label col-form-label-lg" for="inputLarge">Recipe Ingredients</label>
+            <textarea class="form-control" id="exampleTextarea inputLarge" rows="10" spellcheck="false"
+              [(ngModel)]="ingrS" name="ingrS" spellcheck="true"
+              placeholder="Input every Ingredient in a new line like the example below &#10;1 cup rice &#10;10 oz chickpeas&#10;200g chicken"></textarea>
+          </div>
+          <input type="submit" class="btn btn-primary btn-lg btn-block" value="Analyze">
+        </form>
+      </div>
+    </div>
+    <div class="col" style="max-width:40%;">
+      <div class="card text-white bg-secondary mb-3" style="padding:20px;">
+        <label class=" text-center col-form-label col-form-label-lg ">Nutrition Facts</label>
+        <footer class="blockquote-footer text-right">Amount Per Serving</footer>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Info</th>
+              <th scope="col">Amount</th>
+            </tr>
+          </thead>
+          <tbody *ngIf="nutriets">
+            <tr>
+              <th scope="row">Calories</th>
+              <td>{{nutriets.totalNutrients.ENERC_KCAL.quantity}} {{nutriets.totalNutrients.ENERC_KCAL.unit}}</td>
+            </tr>
+            <tr>
+              <th scope="row">Fat</th>
+              <td>{{nutriets.totalNutrients.FAT.quantity}} {{nutriets.totalNutrients.FAT.unit}}</td>
+            </tr>
+            <tr>
+              <th scope="row">Cholesterol</th>
+              <td>{{nutriets.totalNutrients.CHOLE.quantity}} {{nutriets.totalNutrients.CHOLE.unit}}</td>
+            </tr>
+            <tr>
+              <th scope="row">Sodium</th>
+              <td>{{nutriets.totalNutrients.NA.quantity}} {{nutriets.totalNutrients.NA.unit}}</td>
+            </tr>
+            <tr>
+              <th scope="row">Carbohydrate</th>
+              <td>{{nutriets.totalNutrients.CHOCDF.quantity}} {{nutriets.totalNutrients.CHOCDF.unit}}</td>
+            </tr>
+            <tr>
+              <th scope="row">Protein</th>
+              <td>{{nutriets.totalNutrients.PROCNT.quantity}} {{nutriets.totalNutrients.PROCNT.unit}}</td>
+            </tr>
+          </tbody>
+        </table>
+        <footer class="blockquote-footer text-center">Percent Daily Values are based on a 2000 calorie diet</footer>
+      </div>
+    </div>
+  </div>
+    <p *ngIf="error" class="text-center text-danger text-lg">We cannot calculate the nutrition for some ingredients. Please check the ingredient spelling or if
+      you have entered a quantities for the ingredients.</p>
+</div>
