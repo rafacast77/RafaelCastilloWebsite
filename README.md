@@ -24,15 +24,20 @@ Runs in port 3000
    
    * **Passport** allows for Jason Web Token generation and authentication.
    
-   * **CORS** allows for cummunication with front and back end when runnig in different ports
+   * **ByCrypt** allows to encript and salt information at rest.
+   
+   * **CORS** allows for cummunication with front and back end when runnig in different ports.
 
 
-* **Angular:** 
+* **Angular 2:** This project uses Angular as the fron-end framework, It provide an easy to use enviroment for component creation and build using Angular-CLI
+   * **JWT** for token Authentication and validation.
+   * **Routes** allow for a instant browsing without reloads.
+   * **HTTP Modules** handle our HttP requests to the server and public API.
+   * **Auth Guard** protects routes from unauthorized users.
+   * **Flash Message Module** allows for efficient and nice looking alerts.
+   * **Vulnerabilities** which are the most common such as front-end validation, authentication, xss, sanitazion others have been covered using effective security techniques.
 
 
 * **Color pallette :** :art: 
-
-
-
 
 ![Colors](images/task_list_color_palette.png?raw=true "Color Palette")
