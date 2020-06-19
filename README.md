@@ -30,10 +30,15 @@ validation, sanitazion and authentication.
 
 * **Angular 2:** This fron-end framework is pretty robust as it contains a wide selection of tools to build big projects, it also provides an enviroment for component creation and build using Angular-CLI
    * **JWT** for token Authentication and validation.
+   
    * **Routes** allow for a instant browsing without reloads.
+   
    * **HTTP Modules** handle our HTTP requests to the server and public API.
+   
    * **Auth Guard** protects routes from unauthorized users.
+   
    * **Flash Message Module** allows for efficient and nice looking alerts.
+   
    * **Vulnerabilities** which are the most common such as front-end validation, authentication, xss, sanitazion others have been covered using effective security techniques.
 
 
