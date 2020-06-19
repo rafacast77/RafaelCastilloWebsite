@@ -11,13 +11,12 @@ validation, sanitazion and authentication.
    
    
 * **MongoDB:** I have used mongo to create the schemas which hold user information such as registration/login and other.
-   * **Mongoose ODM** Library which falicitates the use of mongo.
+   * **Mongoose ODM** is a library which falicitates the use of mongo.
    
    * Schema creation and handling of data.
    
    
-* **Node.js / Express:** Node.Js and the Express library provide all we need to create, run and test our back-end server. 
-Runs in port 3000
+* **Node.js / Express:** provides all we need to create, run and test our back-end server. Runs in port 3000
    * **REST-API** has been applies for user registration, login, validation and other data handling.
    
    * **Public API** from EDAMAM, it uses a JSON object with recipe information sent as a post request, it used AI to read the recipe and returns it's nutritional value.
@@ -29,10 +28,10 @@ Runs in port 3000
    * **CORS** allows for cummunication with front and back end when runnig in different ports.
 
 
-* **Angular 2:** This project uses Angular as the fron-end framework, It provide an easy to use enviroment for component creation and build using Angular-CLI
+* **Angular 2:** This fron-end framework is pretty robust as it contains a wide selection of tools to build big projects, it also provides an enviroment for component creation and build using Angular-CLI
    * **JWT** for token Authentication and validation.
    * **Routes** allow for a instant browsing without reloads.
-   * **HTTP Modules** handle our HttP requests to the server and public API.
+   * **HTTP Modules** handle our HTTP requests to the server and public API.
    * **Auth Guard** protects routes from unauthorized users.
    * **Flash Message Module** allows for efficient and nice looking alerts.
    * **Vulnerabilities** which are the most common such as front-end validation, authentication, xss, sanitazion others have been covered using effective security techniques.
