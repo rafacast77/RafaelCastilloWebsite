@@ -11,7 +11,7 @@ validation, sanitazion and authentication.
    
    
 * **MongoDB:** I have used mongo to create the schemas which hold user information such as registration/login and other.
-   * **Mongoose ODM** is a library which falicitates the use of mongo.
+   * **Mongoose ODM** is a library which allows for pre-build functionality to be implemented.
    * Schema creation and handling of data.
    
    
