@@ -37,4 +37,4 @@ validation, sanitazion, authorization and authentication. The app has a register
 
 * **Color pallette :** :art: 
 
-![Colors](images/task_list_color_palette.png?raw=true "Color Palette")
+![Colors](angular-src/src/app/images/NutriApp_color_palette.jpg?raw=true "Color Palette")
