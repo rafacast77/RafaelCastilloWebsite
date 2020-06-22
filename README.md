@@ -1,8 +1,11 @@
 # NutriApp  :green_salad:   
 In this application you can enter any recipe and get the nutritional value of it. It also showcase REST and public API handling. 
 The app has been build using MEAN stack. I've also covered basic vulnerabilities by applying some security techniques such as 
-validation, sanitazion and authentication. 
+validation, sanitazion, authorization and authentication. The app has a register and login page which is for a future expansion on saving recepies which is still in progress.
 ## Technologies and techniques used for this project
+* **MVC MODEL**
+
+
 * **HTML 5**
 
 
