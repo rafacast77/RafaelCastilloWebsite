@@ -651,21 +651,21 @@ function NutritionComponent_tbody_33_Template(rf, ctx) { if (rf & 1) {
 } if (rf & 2) {
     const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("", ctx_r0.nutriets.totalNutrients.ENERC_KCAL.quantity, " ", ctx_r0.nutriets.totalNutrients.ENERC_KCAL.unit, "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"](" ", ctx_r0.nutriets.totalNutrients.ENERC_KCAL.quantity, " ", ctx_r0.nutriets.totalNutrients.ENERC_KCAL.unit, " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("", ctx_r0.nutriets.totalNutrients.FAT.quantity, " ", ctx_r0.nutriets.totalNutrients.FAT.unit, "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"](" ", ctx_r0.nutriets.totalNutrients.FAT.quantity, " ", ctx_r0.nutriets.totalNutrients.FAT.unit, " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("", ctx_r0.nutriets.totalNutrients.CHOLE.quantity, " ", ctx_r0.nutriets.totalNutrients.CHOLE.unit, "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"](" ", ctx_r0.nutriets.totalNutrients.CHOLE.quantity, " ", ctx_r0.nutriets.totalNutrients.CHOLE.unit, " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("", ctx_r0.nutriets.totalNutrients.NA.quantity, " ", ctx_r0.nutriets.totalNutrients.NA.unit, "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"](" ", ctx_r0.nutriets.totalNutrients.NA.quantity, " ", ctx_r0.nutriets.totalNutrients.NA.unit, " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("", ctx_r0.nutriets.totalNutrients.CHOCDF.quantity, " ", ctx_r0.nutriets.totalNutrients.CHOCDF.unit, "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"](" ", ctx_r0.nutriets.totalNutrients.CHOCDF.quantity, " ", ctx_r0.nutriets.totalNutrients.CHOCDF.unit, " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("", ctx_r0.nutriets.totalNutrients.PROCNT.quantity, " ", ctx_r0.nutriets.totalNutrients.PROCNT.unit, "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"](" ", ctx_r0.nutriets.totalNutrients.PROCNT.quantity, " ", ctx_r0.nutriets.totalNutrients.PROCNT.unit, " ");
 } }
 function NutritionComponent_p_36_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p", 21);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "We cannot calculate the nutrition for some ingredients. Please check the ingredient spelling or if you have entered a quantities for the ingredients.");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " We cannot calculate the nutrition for some ingredients. Please check the ingredient spelling or if you have entered a quantities for the ingredients. ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } }
 class NutritionComponent {
@@ -752,7 +752,7 @@ NutritionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefin
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](33, NutritionComponent_tbody_33_Template, 31, 12, "tbody", 17);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "footer", 18);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, "Percent Daily Values are based on a 2000 calorie diet");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, " Percent Daily Values are based on a 2000 calorie diet ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -990,13 +990,13 @@ class AuthService {
     registerUser(user) {
         let headers = new _angular_http__WEBPACK_IMPORTED_MODULE_1__["Headers"]();
         headers.append('Content-Type', 'application/json');
-        return this.http.post('users/register', user, { headers: headers })
+        return this.http.post('http://localhost:3000/users/register', user, { headers: headers })
             .map(res => res.json());
     }
     authenticateUser(user) {
         let headers = new _angular_http__WEBPACK_IMPORTED_MODULE_1__["Headers"]();
         headers.append('Content-Type', 'application/json');
-        return this.http.post('users/authenticate', user, { headers: headers })
+        return this.http.post('http://localhost:3000/users/authenticate', user, { headers: headers })
             .map(res => res.json());
     }
     getProfile() {
@@ -1004,7 +1004,7 @@ class AuthService {
         this.loadToken();
         headers.append('Authorization', this.authToken);
         headers.append('Content-Type', 'application/json');
-        return this.http.get('users/home', { headers: headers })
+        return this.http.get('http://localhost:3000/users/home', { headers: headers })
             .map(res => res.json());
     }
     storeUserData(token, user) {
@@ -1176,7 +1176,7 @@ _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["platformBrowser"]().boot
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\Documents\Programming\Website  MEARN CW\RafaelCastilloWebsite\angular-src\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! D:\Documents\Programming\Website  MEARN CW\WebEnterpriseCW\RafaelCastilloWebsite1\angular-src\src\main.ts */"./src/main.ts");
 
 
 /***/ })

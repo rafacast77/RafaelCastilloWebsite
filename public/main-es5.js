@@ -1350,27 +1350,27 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("", ctx_r0.nutriets.totalNutrients.ENERC_KCAL.quantity, " ", ctx_r0.nutriets.totalNutrients.ENERC_KCAL.unit, "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"](" ", ctx_r0.nutriets.totalNutrients.ENERC_KCAL.quantity, " ", ctx_r0.nutriets.totalNutrients.ENERC_KCAL.unit, " ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("", ctx_r0.nutriets.totalNutrients.FAT.quantity, " ", ctx_r0.nutriets.totalNutrients.FAT.unit, "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"](" ", ctx_r0.nutriets.totalNutrients.FAT.quantity, " ", ctx_r0.nutriets.totalNutrients.FAT.unit, " ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("", ctx_r0.nutriets.totalNutrients.CHOLE.quantity, " ", ctx_r0.nutriets.totalNutrients.CHOLE.unit, "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"](" ", ctx_r0.nutriets.totalNutrients.CHOLE.quantity, " ", ctx_r0.nutriets.totalNutrients.CHOLE.unit, " ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("", ctx_r0.nutriets.totalNutrients.NA.quantity, " ", ctx_r0.nutriets.totalNutrients.NA.unit, "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"](" ", ctx_r0.nutriets.totalNutrients.NA.quantity, " ", ctx_r0.nutriets.totalNutrients.NA.unit, " ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("", ctx_r0.nutriets.totalNutrients.CHOCDF.quantity, " ", ctx_r0.nutriets.totalNutrients.CHOCDF.unit, "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"](" ", ctx_r0.nutriets.totalNutrients.CHOCDF.quantity, " ", ctx_r0.nutriets.totalNutrients.CHOCDF.unit, " ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("", ctx_r0.nutriets.totalNutrients.PROCNT.quantity, " ", ctx_r0.nutriets.totalNutrients.PROCNT.unit, "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"](" ", ctx_r0.nutriets.totalNutrients.PROCNT.quantity, " ", ctx_r0.nutriets.totalNutrients.PROCNT.unit, " ");
       }
     }
 
@@ -1378,7 +1378,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p", 21);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "We cannot calculate the nutrition for some ingredients. Please check the ingredient spelling or if you have entered a quantities for the ingredients.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " We cannot calculate the nutrition for some ingredients. Please check the ingredient spelling or if you have entered a quantities for the ingredients. ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }
@@ -1562,7 +1562,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "footer", 18);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, "Percent Daily Values are based on a 2000 calorie diet");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, " Percent Daily Values are based on a 2000 calorie diet ");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -2064,7 +2064,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function registerUser(user) {
           var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_1__["Headers"]();
           headers.append('Content-Type', 'application/json');
-          return this.http.post('users/register', user, {
+          return this.http.post('http://localhost:3000/users/register', user, {
             headers: headers
           }).map(function (res) {
             return res.json();
@@ -2075,7 +2075,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function authenticateUser(user) {
           var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_1__["Headers"]();
           headers.append('Content-Type', 'application/json');
-          return this.http.post('users/authenticate', user, {
+          return this.http.post('http://localhost:3000/users/authenticate', user, {
             headers: headers
           }).map(function (res) {
             return res.json();
@@ -2088,7 +2088,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           this.loadToken();
           headers.append('Authorization', this.authToken);
           headers.append('Content-Type', 'application/json');
-          return this.http.get('users/home', {
+          return this.http.get('http://localhost:3000/users/home', {
             headers: headers
           }).map(function (res) {
             return res.json();
@@ -2406,7 +2406,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! D:\Documents\Programming\Website  MEARN CW\RafaelCastilloWebsite\angular-src\src\main.ts */
+    /*! D:\Documents\Programming\Website  MEARN CW\WebEnterpriseCW\RafaelCastilloWebsite1\angular-src\src\main.ts */
     "./src/main.ts");
     /***/
   }

@@ -50,7 +50,7 @@ export class RegisterComponent implements OnInit {
      if(!this.validateService.validateName(user.name)){
       this.flashMessage.show('Please use only letters for name', {cssClass: 'alert-danger', timeout: 3000});
       return false;
-    }
+    } 
 
      // Validate Username
      if(!this.validateService.validateUsername(user.username)){

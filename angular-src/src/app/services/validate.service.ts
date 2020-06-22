@@ -25,7 +25,7 @@ export class ValidateService {
   validateName(name){
     const nameregex = /^[a-zA-Z_ ]+$/;
     return nameregex.test(name);
-  }
+  } 
 
 
 }
